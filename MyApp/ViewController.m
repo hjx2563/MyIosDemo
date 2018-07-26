@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WidgetListViewController.h"
 
 @interface ViewController ()
 
@@ -26,4 +27,13 @@
 }
 
 
+- (IBAction)openWidgetList:(id)sender {
+    NSLog(@"进入控件列表页");
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"WidgetStoryboard" bundle:nil];
+    
+    WidgetListViewController *vc = [story instantiateViewControllerWithIdentifier:@"widgetVC"];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 @end

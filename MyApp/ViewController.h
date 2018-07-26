@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)openWidgetList:(id)sender;
 
 @end
 
