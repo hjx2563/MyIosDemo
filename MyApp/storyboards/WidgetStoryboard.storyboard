@@ -82,6 +82,14 @@
                                     <segue destination="sCI-A8-gtq" kind="show" id="6k3-TW-1Wr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGt-X7-AZB">
+                                <rect key="frame" x="156" y="312" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="列表增删"/>
+                                <connections>
+                                    <segue destination="lRh-cs-iBJ" kind="show" id="OWJ-YM-yIL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mqb-Pc-O7b"/>
@@ -364,6 +372,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txZ-cD-sEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1320.8" y="619.34032983508246"/>
+        </scene>
+        <!--增删列表-->
+        <scene sceneID="3uy-Pm-dmI">
+            <objects>
+                <viewController id="lRh-cs-iBJ" customClass="AddAndDelCell" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MAn-8s-y4c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HZx-ci-f2V">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier" id="NgE-a2-Ixh">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NgE-a2-Ixh" id="Q6A-ss-UJR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OuR-Lw-qCH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="增删列表" id="iPX-Mh-etC"/>
+                    <connections>
+                        <outlet property="mNavgationItem" destination="iPX-Mh-etC" id="Vz0-6e-FWh"/>
+                        <outlet property="mTableView" destination="HZx-ci-f2V" id="XSt-g6-OXA"/>
+                        <outlet property="mTextField" destination="gSv-tz-Ahs" id="mtI-5a-4W6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ny-NB-y1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add..." textAlignment="natural" minimumFontSize="17" id="gSv-tz-Ahs">
+                    <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </objects>
+            <point key="canvasLocation" x="2132" y="318"/>
         </scene>
         <!--tableview 搜索-->
         <scene sceneID="2VC-V6-Ei4">

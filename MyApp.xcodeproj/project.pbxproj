@@ -55,6 +55,7 @@
 		39A0E0EB21007DBF0004BED5 /* Mexico.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A0E0CB21007DBF0004BED5 /* Mexico.png */; };
 		39A0E0EE210080710004BED5 /* TableViewCustomCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A0E0ED210080710004BED5 /* TableViewCustomCellVC.m */; };
 		39E315B7210994A600BE7AC9 /* StaticTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E315B6210994A600BE7AC9 /* StaticTableviewVC.m */; };
+		39E315BB210EB7F400BE7AC9 /* AddAndDelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E315BA210EB7F400BE7AC9 /* AddAndDelCell.m */; };
 		39EE6C2420F87A320070D4AF /* WidgetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EE6C2320F87A320070D4AF /* WidgetStoryboard.storyboard */; };
 		39EE6C2720F881690070D4AF /* WidgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EE6C2620F881690070D4AF /* WidgetListViewController.m */; };
 		39EE6C2B20F885870070D4AF /* LabelAndButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EE6C2A20F885870070D4AF /* LabelAndButtonVC.m */; };
@@ -140,6 +141,8 @@
 		39A0E0ED210080710004BED5 /* TableViewCustomCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCustomCellVC.m; sourceTree = "<group>"; };
 		39E315B6210994A600BE7AC9 /* StaticTableviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticTableviewVC.m; sourceTree = "<group>"; };
 		39E315B8210994B700BE7AC9 /* StaticTableviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTableviewVC.h; sourceTree = "<group>"; };
+		39E315B9210EB7E700BE7AC9 /* AddAndDelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAndDelCell.h; sourceTree = "<group>"; };
+		39E315BA210EB7F400BE7AC9 /* AddAndDelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAndDelCell.m; sourceTree = "<group>"; };
 		39EE6C2320F87A320070D4AF /* WidgetStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WidgetStoryboard.storyboard; sourceTree = "<group>"; };
 		39EE6C2520F881580070D4AF /* WidgetListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WidgetListViewController.h; sourceTree = "<group>"; };
 		39EE6C2620F881690070D4AF /* WidgetListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetListViewController.m; sourceTree = "<group>"; };
@@ -200,8 +203,6 @@
 				3954997C21071D9700DB6E64 /* team_dictionary.plist */,
 				39EE6C2220F87A120070D4AF /* widgets */,
 				39EE6C2120F879FA0070D4AF /* storyboards */,
-				390AC9DB20F72FFC002B64C0 /* AppDelegate.h */,
-				390AC9DC20F72FFC002B64C0 /* AppDelegate.m */,
 				390AC9DE20F72FFC002B64C0 /* ViewController.h */,
 				390AC9DF20F72FFC002B64C0 /* ViewController.m */,
 				390AC9E120F72FFC002B64C0 /* Main.storyboard */,
@@ -281,6 +282,10 @@
 		39EE6C2220F87A120070D4AF /* widgets */ = {
 			isa = PBXGroup;
 			children = (
+				39E315BA210EB7F400BE7AC9 /* AddAndDelCell.m */,
+				39E315B9210EB7E700BE7AC9 /* AddAndDelCell.h */,
+				390AC9DB20F72FFC002B64C0 /* AppDelegate.h */,
+				390AC9DC20F72FFC002B64C0 /* AppDelegate.m */,
 				39E315B6210994A600BE7AC9 /* StaticTableviewVC.m */,
 				39E315B8210994B700BE7AC9 /* StaticTableviewVC.h */,
 				39EE6C2520F881580070D4AF /* WidgetListViewController.h */,
@@ -477,6 +482,7 @@
 				3928AB3A20FF1A4C008A6F18 /* MyTableViewCell.m in Sources */,
 				390AC9EB20F72FFD002B64C0 /* main.m in Sources */,
 				390AC9DD20F72FFC002B64C0 /* AppDelegate.m in Sources */,
+				39E315BB210EB7F400BE7AC9 /* AddAndDelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +654,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUM3XFVCCB;
 				INFOPLIST_FILE = MyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -665,6 +672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUM3XFVCCB;
 				INFOPLIST_FILE = MyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
