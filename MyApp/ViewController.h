@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 - (IBAction)openWidgetList:(id)sender;
+- (IBAction)openNavigation:(id)sender;
 
 @end
 

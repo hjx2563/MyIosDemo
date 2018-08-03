@@ -29,11 +29,22 @@
 
 - (IBAction)openWidgetList:(id)sender {
     NSLog(@"进入控件列表页");
-    UIStoryboard *story = [UIStoryboard storyboardWithName:@"WidgetStoryboard" bundle:nil];
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"TableviewDemoStoryboard" bundle:nil];
     
-    WidgetListViewController *vc = [story instantiateViewControllerWithIdentifier:@"widgetVC"];
+    WidgetListViewController *vc = [story instantiateViewControllerWithIdentifier:@"TableViewVC"];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
     
 }
+
+- (IBAction)openNavigation:(id)sender {
+    NSLog(@"进入试图控制器页");
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"NavigationDemo" bundle:nil];
+    
+    WidgetListViewController *vc = [story instantiateViewControllerWithIdentifier:@"NavigationDemo"];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 @end

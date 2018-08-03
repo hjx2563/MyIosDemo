@@ -28,6 +28,21 @@
     
     self.listData = [[NSMutableArray alloc] initWithObjects:@"黑龙江", @"吉林", @"辽宁", nil];
     
+    [self initRefresh];
+}
+
+-(void) initRefresh{
+    UIRefreshControl *refControl = [[UIRefreshControl alloc] init];
+    [refControl addTarget:self action:@selector(RefreshData:) forControlEvents:UIControlEventValueChanged];
+    [self.mTableView addSubview:refControl];
+    [refControl beginRefreshing];
+    [self RefreshData:refControl];
+}
+
+-(void)RefreshData:(UIRefreshControl*)control{
+    NSLog(@"刷新数据");
+    [self.mTableView reloadData];
+    [control endRefreshing];
 }
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated{

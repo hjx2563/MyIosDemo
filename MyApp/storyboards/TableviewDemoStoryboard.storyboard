@@ -29,8 +29,8 @@
         <!--控件列表页-->
         <scene sceneID="nF3-H4-CSg">
             <objects>
-                <viewController storyboardIdentifier="widgetVC" title="控件列表页" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TxK-m3-Hup" customClass="WidgetListViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="widgetVC" id="n9C-82-6aB">
+                <viewController storyboardIdentifier="TableViewVC" title="控件列表页" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TxK-m3-Hup" customClass="WidgetListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="TableViewVC" id="n9C-82-6aB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

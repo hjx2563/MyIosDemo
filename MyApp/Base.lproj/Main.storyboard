@@ -45,10 +45,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1c-ZX-55Z">
                                 <rect key="frame" x="90" y="115" width="195" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="控件列表"/>
+                                <state key="normal" title="列表Demo"/>
                                 <connections>
                                     <action selector="openWidgetList:" destination="1kx-fC-XC5" eventType="touchUpInside" id="9Vm-wf-UjT"/>
                                     <action selector="openWidgetList:" destination="q9N-zU-hvk" eventType="touchUpInside" id="sOm-3V-gHf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7X-qH-71Z">
+                                <rect key="frame" x="129" y="149" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="视图控制器Demo"/>
+                                <connections>
+                                    <action selector="openNavigation:" destination="1kx-fC-XC5" eventType="touchUpInside" id="pvJ-rU-rn3"/>
                                 </connections>
                             </button>
                         </subviews>

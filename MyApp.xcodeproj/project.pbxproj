@@ -17,6 +17,9 @@
 		390ACA0020F72FFD002B64C0 /* MyAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AC9FF20F72FFD002B64C0 /* MyAppUITests.m */; };
 		3928AB3720FF0F8E008A6F18 /* TableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3928AB3620FF0F8E008A6F18 /* TableViewVC.m */; };
 		3928AB3A20FF1A4C008A6F18 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3928AB3920FF1A4C008A6F18 /* MyTableViewCell.m */; };
+		39476A482112A5200035B049 /* NavigationDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39476A472112A5200035B049 /* NavigationDemo.storyboard */; };
+		39476A4B2112A9FD0035B049 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39476A4A2112A9FD0035B049 /* RegisterViewController.m */; };
+		39476A4F2112AD6A0035B049 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39476A4E2112AD6A0035B049 /* LoginViewController.m */; };
 		3954997B21057B2D00DB6E64 /* TableViewSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3954997A21057B2D00DB6E64 /* TableViewSearchVC.m */; };
 		3954997D21071D9800DB6E64 /* team_dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3954997C21071D9700DB6E64 /* team_dictionary.plist */; };
 		3954998521071F5B00DB6E64 /* GroupTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3954998421071F5B00DB6E64 /* GroupTableviewVC.m */; };
@@ -56,7 +59,7 @@
 		39A0E0EE210080710004BED5 /* TableViewCustomCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A0E0ED210080710004BED5 /* TableViewCustomCellVC.m */; };
 		39E315B7210994A600BE7AC9 /* StaticTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E315B6210994A600BE7AC9 /* StaticTableviewVC.m */; };
 		39E315BB210EB7F400BE7AC9 /* AddAndDelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E315BA210EB7F400BE7AC9 /* AddAndDelCell.m */; };
-		39EE6C2420F87A320070D4AF /* WidgetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EE6C2320F87A320070D4AF /* WidgetStoryboard.storyboard */; };
+		39EE6C2420F87A320070D4AF /* TableviewDemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EE6C2320F87A320070D4AF /* TableviewDemoStoryboard.storyboard */; };
 		39EE6C2720F881690070D4AF /* WidgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EE6C2620F881690070D4AF /* WidgetListViewController.m */; };
 		39EE6C2B20F885870070D4AF /* LabelAndButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EE6C2A20F885870070D4AF /* LabelAndButtonVC.m */; };
 /* End PBXBuildFile section */
@@ -99,6 +102,11 @@
 		3928AB3620FF0F8E008A6F18 /* TableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewVC.m; sourceTree = "<group>"; };
 		3928AB3820FF1A44008A6F18 /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		3928AB3920FF1A4C008A6F18 /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		39476A472112A5200035B049 /* NavigationDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationDemo.storyboard; sourceTree = "<group>"; };
+		39476A4A2112A9FD0035B049 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		39476A4C2112AA140035B049 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		39476A4D2112AD630035B049 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		39476A4E2112AD6A0035B049 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3954997921057B1B00DB6E64 /* TableViewSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewSearchVC.h; sourceTree = "<group>"; };
 		3954997A21057B2D00DB6E64 /* TableViewSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSearchVC.m; sourceTree = "<group>"; };
 		3954997C21071D9700DB6E64 /* team_dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team_dictionary.plist; sourceTree = "<group>"; };
@@ -143,7 +151,7 @@
 		39E315B8210994B700BE7AC9 /* StaticTableviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticTableviewVC.h; sourceTree = "<group>"; };
 		39E315B9210EB7E700BE7AC9 /* AddAndDelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAndDelCell.h; sourceTree = "<group>"; };
 		39E315BA210EB7F400BE7AC9 /* AddAndDelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAndDelCell.m; sourceTree = "<group>"; };
-		39EE6C2320F87A320070D4AF /* WidgetStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WidgetStoryboard.storyboard; sourceTree = "<group>"; };
+		39EE6C2320F87A320070D4AF /* TableviewDemoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableviewDemoStoryboard.storyboard; sourceTree = "<group>"; };
 		39EE6C2520F881580070D4AF /* WidgetListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WidgetListViewController.h; sourceTree = "<group>"; };
 		39EE6C2620F881690070D4AF /* WidgetListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetListViewController.m; sourceTree = "<group>"; };
 		39EE6C2920F885350070D4AF /* LabelAndButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelAndButtonVC.h; sourceTree = "<group>"; };
@@ -198,10 +206,11 @@
 		390AC9DA20F72FFC002B64C0 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				39476A462112A5000035B049 /* navigationdemo */,
 				39A0E0AB21007DBF0004BED5 /* image */,
 				39A0E0A9210065D60004BED5 /* team.plist */,
 				3954997C21071D9700DB6E64 /* team_dictionary.plist */,
-				39EE6C2220F87A120070D4AF /* widgets */,
+				39EE6C2220F87A120070D4AF /* tabviews */,
 				39EE6C2120F879FA0070D4AF /* storyboards */,
 				390AC9DE20F72FFC002B64C0 /* ViewController.h */,
 				390AC9DF20F72FFC002B64C0 /* ViewController.m */,
@@ -230,6 +239,17 @@
 				390ACA0120F72FFD002B64C0 /* Info.plist */,
 			);
 			path = MyAppUITests;
+			sourceTree = "<group>";
+		};
+		39476A462112A5000035B049 /* navigationdemo */ = {
+			isa = PBXGroup;
+			children = (
+				39476A4A2112A9FD0035B049 /* RegisterViewController.m */,
+				39476A4C2112AA140035B049 /* RegisterViewController.h */,
+				39476A4D2112AD630035B049 /* LoginViewController.h */,
+				39476A4E2112AD6A0035B049 /* LoginViewController.m */,
+			);
+			path = navigationdemo;
 			sourceTree = "<group>";
 		};
 		39A0E0AB21007DBF0004BED5 /* image */ = {
@@ -274,12 +294,13 @@
 		39EE6C2120F879FA0070D4AF /* storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				39EE6C2320F87A320070D4AF /* WidgetStoryboard.storyboard */,
+				39EE6C2320F87A320070D4AF /* TableviewDemoStoryboard.storyboard */,
+				39476A472112A5200035B049 /* NavigationDemo.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
 		};
-		39EE6C2220F87A120070D4AF /* widgets */ = {
+		39EE6C2220F87A120070D4AF /* tabviews */ = {
 			isa = PBXGroup;
 			children = (
 				39E315BA210EB7F400BE7AC9 /* AddAndDelCell.m */,
@@ -303,7 +324,7 @@
 				3954998021071F1E00DB6E64 /* GroupTableviewVC.h */,
 				3954998421071F5B00DB6E64 /* GroupTableviewVC.m */,
 			);
-			path = widgets;
+			path = tabviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +440,7 @@
 				39A0E0DC21007DBF0004BED5 /* Nigeria.png in Resources */,
 				39A0E0D421007DBF0004BED5 /* Cameroon.png in Resources */,
 				39A0E0D221007DBF0004BED5 /* USA.png in Resources */,
+				39476A482112A5200035B049 /* NavigationDemo.storyboard in Resources */,
 				39A0E0E121007DBF0004BED5 /* Serbia.png in Resources */,
 				39A0E0CD21007DBF0004BED5 /* Argentina.png in Resources */,
 				39A0E0E721007DBF0004BED5 /* NorthKorea.png in Resources */,
@@ -440,7 +462,7 @@
 				39A0E0E421007DBF0004BED5 /* Denmark.png in Resources */,
 				39A0E0E021007DBF0004BED5 /* Paraguay.png in Resources */,
 				39A0E0EB21007DBF0004BED5 /* Mexico.png in Resources */,
-				39EE6C2420F87A320070D4AF /* WidgetStoryboard.storyboard in Resources */,
+				39EE6C2420F87A320070D4AF /* TableviewDemoStoryboard.storyboard in Resources */,
 				39A0E0CC21007DBF0004BED5 /* Ghana.png in Resources */,
 				39A0E0D821007DBF0004BED5 /* Greece.png in Resources */,
 				39A0E0E521007DBF0004BED5 /* Japan.png in Resources */,
@@ -475,11 +497,13 @@
 				3954997B21057B2D00DB6E64 /* TableViewSearchVC.m in Sources */,
 				3928AB3720FF0F8E008A6F18 /* TableViewVC.m in Sources */,
 				39A0E0EE210080710004BED5 /* TableViewCustomCellVC.m in Sources */,
+				39476A4F2112AD6A0035B049 /* LoginViewController.m in Sources */,
 				39EE6C2720F881690070D4AF /* WidgetListViewController.m in Sources */,
 				39EE6C2B20F885870070D4AF /* LabelAndButtonVC.m in Sources */,
 				390AC9E020F72FFC002B64C0 /* ViewController.m in Sources */,
 				3954998521071F5B00DB6E64 /* GroupTableviewVC.m in Sources */,
 				3928AB3A20FF1A4C008A6F18 /* MyTableViewCell.m in Sources */,
+				39476A4B2112A9FD0035B049 /* RegisterViewController.m in Sources */,
 				390AC9EB20F72FFD002B64C0 /* main.m in Sources */,
 				390AC9DD20F72FFC002B64C0 /* AppDelegate.m in Sources */,
 				39E315BB210EB7F400BE7AC9 /* AddAndDelCell.m in Sources */,
