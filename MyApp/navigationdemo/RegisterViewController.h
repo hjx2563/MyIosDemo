@@ -21,7 +21,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextFileld;
 @property (weak, nonatomic) IBOutlet UITextField *pwdTextField;
-
 @property (assign,nonatomic)id<CallBackDelegete> delegate;
 @end
 
