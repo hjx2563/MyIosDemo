@@ -24,4 +24,5 @@
 @property (assign,nonatomic)id<CallBackDelegete> delegate;
 @end
 
+
 #endif /* RegisterViewController_h */
