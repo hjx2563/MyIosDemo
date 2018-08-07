@@ -13,6 +13,9 @@
 #import "RegisterViewController.h"
 @interface LoginViewController : UIViewController<CallBackDelegete>
 - (IBAction)doRegister:(id)sender;
+- (IBAction)doLogin:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *myNameTxt;
+@property (weak, nonatomic) IBOutlet UITextField *myPwdTxt;
 @end
 
 #endif /* LoginViewController_h */

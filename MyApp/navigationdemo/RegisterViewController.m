@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "RegisterViewController.h"
+#import "StringUtils.h"
 
 @interface RegisterViewController()
 @end
@@ -20,7 +21,7 @@
     NSString *pwd =[self.pwdTextField text];
     
     NSLog(@"用户名是：%@，密码是%@", name, pwd);
-    if([self isBlankString:name] || [self isBlankString:pwd]){
+    if([StringUtils isBlankString:name] || [StringUtils isBlankString:pwd]){
         NSLog(@"用户名或密码不能为空");
         [self alertMsg];
         return;
@@ -53,22 +54,4 @@
     NSLog(@"保存退出");
     return nil;
 }
-- (BOOL)isBlankString:(NSString *)aStr {
-    if (!aStr) {
-        return YES;
-    }
-    if ([aStr isKindOfClass:[NSNull class]]) {
-        return YES;
-    }
-    if (!aStr.length) {
-        return YES;
-    }
-    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-    NSString *trimmedStr = [aStr stringByTrimmingCharactersInSet:set];
-    if (!trimmedStr.length) {
-        return YES;
-    }
-    return NO;
-}
-
 @end

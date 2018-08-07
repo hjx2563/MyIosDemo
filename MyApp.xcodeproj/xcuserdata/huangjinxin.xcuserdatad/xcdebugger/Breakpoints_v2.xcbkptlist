@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyApp/navigationdemo/RegisterViewController.m"
-            timestampString = "554895809.972949"
+            timestampString = "555242722.8319041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-save:"
             landmarkType = "7">
          </BreakpointContent>

@@ -62,6 +62,11 @@
 		39EE6C2420F87A320070D4AF /* TableviewDemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EE6C2320F87A320070D4AF /* TableviewDemoStoryboard.storyboard */; };
 		39EE6C2720F881690070D4AF /* WidgetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EE6C2620F881690070D4AF /* WidgetListViewController.m */; };
 		39EE6C2B20F885870070D4AF /* LabelAndButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EE6C2A20F885870070D4AF /* LabelAndButtonVC.m */; };
+		39F1C85E2117F1AC006F4512 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F1C85D2117F1AC006F4512 /* StringUtils.m */; };
+		39F1C86121181E8A006F4512 /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F1C86021181E8A006F4512 /* PageController.m */; };
+		39F1C866211833AF006F4512 /* 保罗克利-肖像.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F1C863211833AF006F4512 /* 保罗克利-肖像.png */; };
+		39F1C867211833AF006F4512 /* 达芬奇-蒙娜丽莎.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F1C864211833AF006F4512 /* 达芬奇-蒙娜丽莎.png */; };
+		39F1C868211833AF006F4512 /* 罗丹-思想者.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F1C865211833AF006F4512 /* 罗丹-思想者.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +161,13 @@
 		39EE6C2620F881690070D4AF /* WidgetListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetListViewController.m; sourceTree = "<group>"; };
 		39EE6C2920F885350070D4AF /* LabelAndButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelAndButtonVC.h; sourceTree = "<group>"; };
 		39EE6C2A20F885870070D4AF /* LabelAndButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelAndButtonVC.m; sourceTree = "<group>"; };
+		39F1C85D2117F1AC006F4512 /* StringUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		39F1C85F2117F1BB006F4512 /* StringUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		39F1C86021181E8A006F4512 /* PageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
+		39F1C86221181E96006F4512 /* PageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
+		39F1C863211833AF006F4512 /* 保罗克利-肖像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "保罗克利-肖像.png"; path = "../../../源码/《iOS开发指南》第三版/《iOS开发指南》第三版（上）/ch7/资源/images/保罗克利-肖像.png"; sourceTree = "<group>"; };
+		39F1C864211833AF006F4512 /* 达芬奇-蒙娜丽莎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "达芬奇-蒙娜丽莎.png"; path = "../../../源码/《iOS开发指南》第三版/《iOS开发指南》第三版（上）/ch7/资源/images/达芬奇-蒙娜丽莎.png"; sourceTree = "<group>"; };
+		39F1C865211833AF006F4512 /* 罗丹-思想者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "罗丹-思想者.png"; path = "../../../源码/《iOS开发指南》第三版/《iOS开发指南》第三版（上）/ch7/资源/images/罗丹-思想者.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +218,7 @@
 		390AC9DA20F72FFC002B64C0 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				39F1C85C2117F18E006F4512 /* utils */,
 				39476A462112A5000035B049 /* navigationdemo */,
 				39A0E0AB21007DBF0004BED5 /* image */,
 				39A0E0A9210065D60004BED5 /* team.plist */,
@@ -248,6 +261,8 @@
 				39476A4C2112AA140035B049 /* RegisterViewController.h */,
 				39476A4D2112AD630035B049 /* LoginViewController.h */,
 				39476A4E2112AD6A0035B049 /* LoginViewController.m */,
+				39F1C86021181E8A006F4512 /* PageController.m */,
+				39F1C86221181E96006F4512 /* PageController.h */,
 			);
 			path = navigationdemo;
 			sourceTree = "<group>";
@@ -255,6 +270,9 @@
 		39A0E0AB21007DBF0004BED5 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				39F1C863211833AF006F4512 /* 保罗克利-肖像.png */,
+				39F1C864211833AF006F4512 /* 达芬奇-蒙娜丽莎.png */,
+				39F1C865211833AF006F4512 /* 罗丹-思想者.png */,
 				39A0E0AC21007DBF0004BED5 /* Ghana.png */,
 				39A0E0AD21007DBF0004BED5 /* Argentina.png */,
 				39A0E0AE21007DBF0004BED5 /* SouthAfrica.png */,
@@ -325,6 +343,15 @@
 				3954998421071F5B00DB6E64 /* GroupTableviewVC.m */,
 			);
 			path = tabviews;
+			sourceTree = "<group>";
+		};
+		39F1C85C2117F18E006F4512 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				39F1C85D2117F1AC006F4512 /* StringUtils.m */,
+				39F1C85F2117F1BB006F4512 /* StringUtils.h */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39A0E0DD21007DBF0004BED5 /* Germany.png in Resources */,
+				39F1C868211833AF006F4512 /* 罗丹-思想者.png in Resources */,
 				39A0E0DF21007DBF0004BED5 /* Spain.png in Resources */,
 				390AC9E820F72FFD002B64C0 /* LaunchScreen.storyboard in Resources */,
 				39A0E0D021007DBF0004BED5 /* Algeria.png in Resources */,
@@ -438,8 +466,10 @@
 				39A0E0D721007DBF0004BED5 /* Brazil.png in Resources */,
 				39A0E0D921007DBF0004BED5 /* NewZealand.png in Resources */,
 				39A0E0DC21007DBF0004BED5 /* Nigeria.png in Resources */,
+				39F1C866211833AF006F4512 /* 保罗克利-肖像.png in Resources */,
 				39A0E0D421007DBF0004BED5 /* Cameroon.png in Resources */,
 				39A0E0D221007DBF0004BED5 /* USA.png in Resources */,
+				39F1C867211833AF006F4512 /* 达芬奇-蒙娜丽莎.png in Resources */,
 				39476A482112A5200035B049 /* NavigationDemo.storyboard in Resources */,
 				39A0E0E121007DBF0004BED5 /* Serbia.png in Resources */,
 				39A0E0CD21007DBF0004BED5 /* Argentina.png in Resources */,
@@ -494,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E315B7210994A600BE7AC9 /* StaticTableviewVC.m in Sources */,
+				39F1C85E2117F1AC006F4512 /* StringUtils.m in Sources */,
 				3954997B21057B2D00DB6E64 /* TableViewSearchVC.m in Sources */,
 				3928AB3720FF0F8E008A6F18 /* TableViewVC.m in Sources */,
 				39A0E0EE210080710004BED5 /* TableViewCustomCellVC.m in Sources */,
@@ -504,6 +535,7 @@
 				3954998521071F5B00DB6E64 /* GroupTableviewVC.m in Sources */,
 				3928AB3A20FF1A4C008A6F18 /* MyTableViewCell.m in Sources */,
 				39476A4B2112A9FD0035B049 /* RegisterViewController.m in Sources */,
+				39F1C86121181E8A006F4512 /* PageController.m in Sources */,
 				390AC9EB20F72FFD002B64C0 /* main.m in Sources */,
 				390AC9DD20F72FFC002B64C0 /* AppDelegate.m in Sources */,
 				39E315BB210EB7F400BE7AC9 /* AddAndDelCell.m in Sources */,

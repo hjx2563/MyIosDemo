@@ -19,17 +19,51 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ogh-gO-r7i" kind="relationship" relationship="rootViewController" id="NpO-FS-GMC"/>
+                        <segue destination="fak-dS-afE" kind="relationship" relationship="rootViewController" id="C04-ox-AJx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7v-Wd-2yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-791" y="56"/>
+            <point key="canvasLocation" x="-1124" y="-146"/>
+        </scene>
+        <!--导航demo-->
+        <scene sceneID="red-v2-6uL">
+            <objects>
+                <viewController storyboardIdentifier="NavigationDemo" id="fak-dS-afE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANk-nW-cuy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOV-b8-fNb">
+                                <rect key="frame" x="162" y="86" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="VC传值"/>
+                                <connections>
+                                    <segue destination="ogh-gO-r7i" kind="show" id="O9E-tk-il0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpy-uJ-vce">
+                                <rect key="frame" x="156" y="124" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="分屏导航"/>
+                                <connections>
+                                    <segue destination="wfk-Ii-c6S" kind="show" id="G8j-Bg-FeR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0X4-Fj-7SK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="导航demo" id="P93-6r-pab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCr-FG-5mh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="-146"/>
         </scene>
         <!--视图控制-->
         <scene sceneID="RC6-F8-UK2">
             <objects>
-                <viewController storyboardIdentifier="NavigationDemo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ogh-gO-r7i" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="ogh-gO-r7i" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="92M-Rm-ndX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +100,9 @@
                                 <rect key="frame" x="105" y="243" width="164" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="doLogin:" destination="ogh-gO-r7i" eventType="touchUpInside" id="fn8-TB-Nyd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jud-oD-0IB">
                                 <rect key="frame" x="105" y="305" width="164" height="30"/>
@@ -80,10 +117,14 @@
                         <viewLayoutGuide key="safeArea" id="mpB-DR-OwM"/>
                     </view>
                     <navigationItem key="navigationItem" title="视图控制" id="T8G-Gd-BsO"/>
+                    <connections>
+                        <outlet property="myNameTxt" destination="8Sp-kf-wnQ" id="Cq7-NJ-1TG"/>
+                        <outlet property="myPwdTxt" destination="Kr5-y5-SML" id="Joj-7j-Pps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfU-ls-qvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82.400000000000006" y="51.724137931034484"/>
+            <point key="canvasLocation" x="582" y="-146"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="b9y-dc-6wF">
@@ -150,7 +191,111 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Nh-pV-j3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="982" y="52"/>
+            <point key="canvasLocation" x="1258" y="-146"/>
+        </scene>
+        <!--分屏导航-->
+        <scene sceneID="OC6-ce-lge">
+            <objects>
+                <viewController storyboardIdentifier="pageController" id="wfk-Ii-c6S" userLabel="分屏导航" customClass="PageController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zRC-4c-4j5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3i-Jz-GwG">
+                                <rect key="frame" x="1" y="64" width="375" height="565"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jqi-kd-cG1">
+                                <rect key="frame" x="0.0" y="630" width="375" height="37"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.38584213390654165" green="1" blue="0.27609564677303366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="pageIndicatorTintColor" red="1" green="0.26177309848194408" blue="0.13688008540608165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="pageChange:" destination="wfk-Ii-c6S" eventType="valueChanged" id="kXN-SO-vfn"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vzg-pS-g0g"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="分屏导航" id="CUj-jF-dMa"/>
+                    <connections>
+                        <outlet property="mPageControl" destination="jqi-kd-cG1" id="bs2-Qg-ZWW"/>
+                        <outlet property="mScroller" destination="r3i-Jz-GwG" id="5qB-sc-fsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ3-AO-7KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="596.85157421289364"/>
+        </scene>
+        <!--P1-->
+        <scene sceneID="j5I-NK-jDG">
+            <objects>
+                <viewController storyboardIdentifier="P1" id="96i-h7-8uo" userLabel="P1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8H-gs-XsG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="保罗克利-肖像.png" translatesAutoresizingMaskIntoConstraints="NO" id="XpH-t9-FpQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OxD-l6-if4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYI-r5-fYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312.8" y="594.15292353823088"/>
+        </scene>
+        <!--P2-->
+        <scene sceneID="rFP-gW-3LY">
+            <objects>
+                <viewController storyboardIdentifier="P2" id="K3q-lh-ZtU" userLabel="P2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3qf-Pk-hYV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="罗丹-思想者.png" translatesAutoresizingMaskIntoConstraints="NO" id="mOd-lZ-3Zd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nvB-Zk-mQS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWy-2q-HuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="597"/>
+        </scene>
+        <!--P3-->
+        <scene sceneID="Vpm-ST-WRu">
+            <objects>
+                <viewController storyboardIdentifier="P3" id="LfG-i4-mh7" userLabel="P3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sl3-mL-WRR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="达芬奇-蒙娜丽莎.png" translatesAutoresizingMaskIntoConstraints="NO" id="lbl-Th-Lr5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lfw-Yb-BN2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yH-Tj-efU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706" y="597"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="保罗克利-肖像.png" width="640" height="960"/>
+        <image name="罗丹-思想者.png" width="640" height="960"/>
+        <image name="达芬奇-蒙娜丽莎.png" width="640" height="960"/>
+    </resources>
 </document>
