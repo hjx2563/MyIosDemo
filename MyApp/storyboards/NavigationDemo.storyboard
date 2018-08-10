@@ -50,6 +50,30 @@
                                     <segue destination="wfk-Ii-c6S" kind="show" id="G8j-Bg-FeR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDV-gT-IEO">
+                                <rect key="frame" x="156" y="162" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="分页导航"/>
+                                <connections>
+                                    <segue destination="9lx-Ds-8W0" kind="show" id="XXF-md-Jec"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tk-4q-tLv">
+                                <rect key="frame" x="163" y="200" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="tab bar"/>
+                                <connections>
+                                    <segue destination="wQX-2w-6Mz" kind="show" id="qDC-t7-3hB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD1-Pa-UEf">
+                                <rect key="frame" x="149" y="238" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="树结构导航"/>
+                                <connections>
+                                    <segue destination="6oY-td-fhq" kind="show" id="jWw-d0-c84"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0X4-Fj-7SK"/>
@@ -229,6 +253,166 @@
             </objects>
             <point key="canvasLocation" x="580" y="596.85157421289364"/>
         </scene>
+        <!--分页导航-->
+        <scene sceneID="OLe-6U-SJG">
+            <objects>
+                <viewController id="9lx-Ds-8W0" customClass="PageNavigationVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qVg-7l-cMB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aXu-Gz-BK7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="分页导航" id="4Nz-Yn-CQF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiL-aq-pk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="1381"/>
+        </scene>
+        <!--pageTwo-->
+        <scene sceneID="ihT-pu-oyl">
+            <objects>
+                <viewController id="tIN-ih-E8S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NcG-ik-fM3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="罗丹-思想者.png" translatesAutoresizingMaskIntoConstraints="NO" id="mMZ-UE-csi">
+                                <rect key="frame" x="67" y="223" width="240" height="410"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第二个页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSY-nR-PfT">
+                                <rect key="frame" x="166" y="143" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NVG-rL-l9x"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pageTwo" image="Argentina.png" landscapeImage="Argentina.png" largeContentSizeImage="Argentina.png" id="wTa-yp-Rr8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5z7-Ef-qpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274.4000000000001" y="2004.6476761619192"/>
+        </scene>
+        <!--树结构导航-->
+        <scene sceneID="c6F-RC-Mtr">
+            <objects>
+                <viewController id="6oY-td-fhq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hbv-uQ-CX8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2bm-vi-oK5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellIdentifier" id="9eI-6a-41b">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9eI-6a-41b" id="xdQ-Dv-D5V">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="EZe-s9-8Oo" kind="show" id="mQX-EA-0t0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6oY-td-fhq" id="UpS-br-hg7"/>
+                                    <outlet property="delegate" destination="6oY-td-fhq" id="Ihm-Rf-3Nr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UTj-H9-85j"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="树结构导航" id="Xp7-RX-84R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Woy-Vr-O1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="2755"/>
+        </scene>
+        <!--二级目录-->
+        <scene sceneID="Bkm-VX-UZI">
+            <objects>
+                <tableViewController title="二级目录" id="EZe-s9-8Oo" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iM1-WL-9fC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="r3Q-5t-xOD">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r3Q-5t-xOD" id="XHh-R1-ehd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EZe-s9-8Oo" id="T9S-Nm-eOD"/>
+                            <outlet property="delegate" destination="EZe-s9-8Oo" id="wWF-kh-Y0x"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gv-Xj-Dpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="2755"/>
+        </scene>
+        <!--pageOne-->
+        <scene sceneID="sp3-Hq-w88">
+            <objects>
+                <viewController id="Las-4e-Sfa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mg4-oa-Vhz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第一个页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-Ng-AQz">
+                                <rect key="frame" x="144" y="136" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="保罗克利-肖像.png" translatesAutoresizingMaskIntoConstraints="NO" id="djn-61-4lu">
+                                <rect key="frame" x="67" y="213" width="240" height="373"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ln3-iL-lAX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pageOne" image="Chile.png" selectedImage="Algeria.png" id="2Ab-IU-EIp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eOT-Kj-imj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274.4000000000001" y="1338.9805097451276"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5cT-Lp-BUV">
+            <objects>
+                <tabBarController id="wQX-2w-6Mz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lcl-8A-kRu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Las-4e-Sfa" kind="relationship" relationship="viewControllers" id="toF-1l-U42"/>
+                        <segue destination="tIN-ih-E8S" kind="relationship" relationship="viewControllers" id="6fc-EI-MeF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iq-EW-2UA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="1672"/>
+        </scene>
         <!--P1-->
         <scene sceneID="j5I-NK-jDG">
             <objects>
@@ -294,6 +478,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Algeria.png" width="29" height="20"/>
+        <image name="Argentina.png" width="29" height="20"/>
+        <image name="Chile.png" width="29" height="20"/>
         <image name="保罗克利-肖像.png" width="640" height="960"/>
         <image name="罗丹-思想者.png" width="640" height="960"/>
         <image name="达芬奇-蒙娜丽莎.png" width="640" height="960"/>

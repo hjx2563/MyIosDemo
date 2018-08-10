@@ -67,6 +67,8 @@
 		39F1C866211833AF006F4512 /* 保罗克利-肖像.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F1C863211833AF006F4512 /* 保罗克利-肖像.png */; };
 		39F1C867211833AF006F4512 /* 达芬奇-蒙娜丽莎.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F1C864211833AF006F4512 /* 达芬奇-蒙娜丽莎.png */; };
 		39F1C868211833AF006F4512 /* 罗丹-思想者.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F1C865211833AF006F4512 /* 罗丹-思想者.png */; };
+		39F1C86B211BDE1E006F4512 /* PageNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F1C86A211BDE1E006F4512 /* PageNavigationVC.m */; };
+		39F1C86E211C36D9006F4512 /* TreeNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F1C86D211C36D9006F4512 /* TreeNavigationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +170,10 @@
 		39F1C863211833AF006F4512 /* 保罗克利-肖像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "保罗克利-肖像.png"; path = "../../../源码/《iOS开发指南》第三版/《iOS开发指南》第三版（上）/ch7/资源/images/保罗克利-肖像.png"; sourceTree = "<group>"; };
 		39F1C864211833AF006F4512 /* 达芬奇-蒙娜丽莎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "达芬奇-蒙娜丽莎.png"; path = "../../../源码/《iOS开发指南》第三版/《iOS开发指南》第三版（上）/ch7/资源/images/达芬奇-蒙娜丽莎.png"; sourceTree = "<group>"; };
 		39F1C865211833AF006F4512 /* 罗丹-思想者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "罗丹-思想者.png"; path = "../../../源码/《iOS开发指南》第三版/《iOS开发指南》第三版（上）/ch7/资源/images/罗丹-思想者.png"; sourceTree = "<group>"; };
+		39F1C869211BDE14006F4512 /* PageNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageNavigationVC.h; sourceTree = "<group>"; };
+		39F1C86A211BDE1E006F4512 /* PageNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageNavigationVC.m; sourceTree = "<group>"; };
+		39F1C86C211C36D1006F4512 /* TreeNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNavigationVC.h; sourceTree = "<group>"; };
+		39F1C86D211C36D9006F4512 /* TreeNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeNavigationVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +269,10 @@
 				39476A4E2112AD6A0035B049 /* LoginViewController.m */,
 				39F1C86021181E8A006F4512 /* PageController.m */,
 				39F1C86221181E96006F4512 /* PageController.h */,
+				39F1C869211BDE14006F4512 /* PageNavigationVC.h */,
+				39F1C86A211BDE1E006F4512 /* PageNavigationVC.m */,
+				39F1C86C211C36D1006F4512 /* TreeNavigationVC.h */,
+				39F1C86D211C36D9006F4512 /* TreeNavigationVC.m */,
 			);
 			path = navigationdemo;
 			sourceTree = "<group>";
@@ -525,6 +535,8 @@
 			files = (
 				39E315B7210994A600BE7AC9 /* StaticTableviewVC.m in Sources */,
 				39F1C85E2117F1AC006F4512 /* StringUtils.m in Sources */,
+				39F1C86E211C36D9006F4512 /* TreeNavigationVC.m in Sources */,
+				39F1C86B211BDE1E006F4512 /* PageNavigationVC.m in Sources */,
 				3954997B21057B2D00DB6E64 /* TableViewSearchVC.m in Sources */,
 				3928AB3720FF0F8E008A6F18 /* TableViewVC.m in Sources */,
 				39A0E0EE210080710004BED5 /* TableViewCustomCellVC.m in Sources */,
