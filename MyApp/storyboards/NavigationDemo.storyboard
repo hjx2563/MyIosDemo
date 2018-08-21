@@ -301,7 +301,7 @@
         <!--树结构导航-->
         <scene sceneID="c6F-RC-Mtr">
             <objects>
-                <viewController id="6oY-td-fhq" sceneMemberID="viewController">
+                <viewController id="6oY-td-fhq" customClass="TreeNavigationVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hbv-uQ-CX8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,7 +319,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="EZe-s9-8Oo" kind="show" id="mQX-EA-0t0"/>
+                                            <segue destination="rfs-HP-AVG" kind="show" identifier="showCitiListIdentifier" id="FTr-Oe-7u4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -333,38 +333,76 @@
                         <viewLayoutGuide key="safeArea" id="UTj-H9-85j"/>
                     </view>
                     <navigationItem key="navigationItem" title="树结构导航" id="Xp7-RX-84R"/>
+                    <connections>
+                        <outlet property="mTableview" destination="2bm-vi-oK5" id="pjt-vk-Wia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Woy-Vr-O1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="582" y="2755"/>
         </scene>
-        <!--二级目录-->
-        <scene sceneID="Bkm-VX-UZI">
+        <!--城市列表-->
+        <scene sceneID="jXP-vH-I3F">
             <objects>
-                <tableViewController title="二级目录" id="EZe-s9-8Oo" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iM1-WL-9fC">
+                <viewController title="城市列表" id="rfs-HP-AVG" customClass="TreeSecondVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8jZ-Dh-Tj5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pzv-0T-836">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellIdentifier" id="gE6-8Q-ecn">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gE6-8Q-ecn" id="jyl-dN-EXZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rfs-HP-AVG" id="utr-B0-y74"/>
+                                    <outlet property="delegate" destination="rfs-HP-AVG" id="PlO-bE-Yxa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="r3Q-5t-xOD">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r3Q-5t-xOD" id="XHh-R1-ehd">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="EZe-s9-8Oo" id="T9S-Nm-eOD"/>
-                            <outlet property="delegate" destination="EZe-s9-8Oo" id="wWF-kh-Y0x"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gv-Xj-Dpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="Ei4-oo-SFM"/>
+                    </view>
+                    <connections>
+                        <outlet property="mTableView" destination="pzv-0T-836" id="Pis-cT-OcL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grY-17-tgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="2755"/>
+            <point key="canvasLocation" x="1360.8" y="2749.4752623688159"/>
+        </scene>
+        <!--City InfoVC-->
+        <scene sceneID="V0N-M7-jZb">
+            <objects>
+                <viewController storyboardIdentifier="CityInfoVC" id="nfO-nJ-Rrr" customClass="CityInfoVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TgU-vK-1v9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="水电费水电费第三方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j3-j9-kQF">
+                                <rect key="frame" x="109" y="78" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4XH-Zh-pFA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAd-cL-D8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2226.4000000000001" y="2746.776611694153"/>
         </scene>
         <!--pageOne-->
         <scene sceneID="sp3-Hq-w88">

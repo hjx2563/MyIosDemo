@@ -12,7 +12,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TreeNavigationVC : UIViewController<UITableViewDelegate, UITableViewDataSource>
- 
+@property (nonatomic, strong) NSDictionary *dict;
+@property (weak, nonatomic) IBOutlet UITableView *mTableview;
 @end
 
 #endif /* TreeNavigationVC_h */

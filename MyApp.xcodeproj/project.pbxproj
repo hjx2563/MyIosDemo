@@ -17,6 +17,10 @@
 		390ACA0020F72FFD002B64C0 /* MyAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390AC9FF20F72FFD002B64C0 /* MyAppUITests.m */; };
 		3928AB3720FF0F8E008A6F18 /* TableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3928AB3620FF0F8E008A6F18 /* TableViewVC.m */; };
 		3928AB3A20FF1A4C008A6F18 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3928AB3920FF1A4C008A6F18 /* MyTableViewCell.m */; };
+		393056CA2122752600D22351 /* provinces_cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 393056C92122752600D22351 /* provinces_cities.plist */; };
+		393056CC21227ADD00D22351 /* TreeSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 393056CB21227ADD00D22351 /* TreeSecondVC.m */; };
+		393056D0212411BB00D22351 /* CityInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 393056CF212411BB00D22351 /* CityInfoVC.m */; };
+		393056D121241AD200D22351 /* CityInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 393056CF212411BB00D22351 /* CityInfoVC.m */; };
 		39476A482112A5200035B049 /* NavigationDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39476A472112A5200035B049 /* NavigationDemo.storyboard */; };
 		39476A4B2112A9FD0035B049 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39476A4A2112A9FD0035B049 /* RegisterViewController.m */; };
 		39476A4F2112AD6A0035B049 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39476A4E2112AD6A0035B049 /* LoginViewController.m */; };
@@ -109,6 +113,11 @@
 		3928AB3620FF0F8E008A6F18 /* TableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewVC.m; sourceTree = "<group>"; };
 		3928AB3820FF1A44008A6F18 /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		3928AB3920FF1A4C008A6F18 /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		393056C92122752600D22351 /* provinces_cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = provinces_cities.plist; path = "../../../源码/《iOS开发指南》第三版/《iOS开发指南》第三版（上）/ch7/资源/provinces_cities.plist"; sourceTree = "<group>"; };
+		393056CB21227ADD00D22351 /* TreeSecondVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeSecondVC.m; sourceTree = "<group>"; };
+		393056CD21227AE900D22351 /* TreeSecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeSecondVC.h; sourceTree = "<group>"; };
+		393056CE212411B100D22351 /* CityInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityInfoVC.h; sourceTree = "<group>"; };
+		393056CF212411BB00D22351 /* CityInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityInfoVC.m; sourceTree = "<group>"; };
 		39476A472112A5200035B049 /* NavigationDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationDemo.storyboard; sourceTree = "<group>"; };
 		39476A4A2112A9FD0035B049 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		39476A4C2112AA140035B049 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -224,6 +233,7 @@
 		390AC9DA20F72FFC002B64C0 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				393056C8212274DE00D22351 /* plists */,
 				39F1C85C2117F18E006F4512 /* utils */,
 				39476A462112A5000035B049 /* navigationdemo */,
 				39A0E0AB21007DBF0004BED5 /* image */,
@@ -260,6 +270,14 @@
 			path = MyAppUITests;
 			sourceTree = "<group>";
 		};
+		393056C8212274DE00D22351 /* plists */ = {
+			isa = PBXGroup;
+			children = (
+				393056C92122752600D22351 /* provinces_cities.plist */,
+			);
+			path = plists;
+			sourceTree = "<group>";
+		};
 		39476A462112A5000035B049 /* navigationdemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +291,10 @@
 				39F1C86A211BDE1E006F4512 /* PageNavigationVC.m */,
 				39F1C86C211C36D1006F4512 /* TreeNavigationVC.h */,
 				39F1C86D211C36D9006F4512 /* TreeNavigationVC.m */,
+				393056CB21227ADD00D22351 /* TreeSecondVC.m */,
+				393056CD21227AE900D22351 /* TreeSecondVC.h */,
+				393056CE212411B100D22351 /* CityInfoVC.h */,
+				393056CF212411BB00D22351 /* CityInfoVC.m */,
 			);
 			path = navigationdemo;
 			sourceTree = "<group>";
@@ -500,6 +522,7 @@
 				39A0E0CF21007DBF0004BED5 /* Holland.png in Resources */,
 				39A0E0D521007DBF0004BED5 /* England.png in Resources */,
 				39A0E0E421007DBF0004BED5 /* Denmark.png in Resources */,
+				393056CA2122752600D22351 /* provinces_cities.plist in Resources */,
 				39A0E0E021007DBF0004BED5 /* Paraguay.png in Resources */,
 				39A0E0EB21007DBF0004BED5 /* Mexico.png in Resources */,
 				39EE6C2420F87A320070D4AF /* TableviewDemoStoryboard.storyboard in Resources */,
@@ -534,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E315B7210994A600BE7AC9 /* StaticTableviewVC.m in Sources */,
+				393056CC21227ADD00D22351 /* TreeSecondVC.m in Sources */,
 				39F1C85E2117F1AC006F4512 /* StringUtils.m in Sources */,
 				39F1C86E211C36D9006F4512 /* TreeNavigationVC.m in Sources */,
 				39F1C86B211BDE1E006F4512 /* PageNavigationVC.m in Sources */,
@@ -549,6 +573,7 @@
 				39476A4B2112A9FD0035B049 /* RegisterViewController.m in Sources */,
 				39F1C86121181E8A006F4512 /* PageController.m in Sources */,
 				390AC9EB20F72FFD002B64C0 /* main.m in Sources */,
+				393056D0212411BB00D22351 /* CityInfoVC.m in Sources */,
 				390AC9DD20F72FFC002B64C0 /* AppDelegate.m in Sources */,
 				39E315BB210EB7F400BE7AC9 /* AddAndDelCell.m in Sources */,
 			);
@@ -567,6 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				390ACA0020F72FFD002B64C0 /* MyAppUITests.m in Sources */,
+				393056D121241AD200D22351 /* CityInfoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

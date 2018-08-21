@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 
 #import "TreeNavigationVC.h"
+#import "StringUtils.h"
+#import "TreeSecondVC.h"
 
-@interface TreeNavigationVC()
+@interface TreeNavigationVC(){
+    NSArray *dataArr;
+}
 @end
 
 @implementation TreeNavigationVC
@@ -21,12 +25,38 @@
 }
 
 -(void) initData{
-    
+    dataArr = @[@"sdfsdfds"];
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *path = [bundle pathForResource:@"provinces_cities" ofType:@"plist"];
+    NSLog(@"path = %@",path);
+    self.dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    dataArr = [self.dict allKeys];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier" forIndexPath:indexPath];
+    cell.textLabel.text = [dataArr objectAtIndex:[indexPath row]];
+    
+    return cell;
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return dataArr.count;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSLog(@"segue.identifier = %@", segue.identifier);
+    if([segue.identifier isEqualToString: @"showCitiListIdentifier"]){
+        TreeSecondVC *vc = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.mTableview indexPathForSelectedRow];
+        NSInteger index = [indexPath row];
+        NSString *key = [dataArr objectAtIndex:index];
+        NSArray *list = [self.dict objectForKey:key];
+        vc.listData = list;
+        vc.title = key;
+    }
+}
+
 
 @end
 
