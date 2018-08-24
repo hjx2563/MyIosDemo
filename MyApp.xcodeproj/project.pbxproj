@@ -27,6 +27,10 @@
 		3954997B21057B2D00DB6E64 /* TableViewSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3954997A21057B2D00DB6E64 /* TableViewSearchVC.m */; };
 		3954997D21071D9800DB6E64 /* team_dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3954997C21071D9700DB6E64 /* team_dictionary.plist */; };
 		3954998521071F5B00DB6E64 /* GroupTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3954998421071F5B00DB6E64 /* GroupTableviewVC.m */; };
+		39A0333C212BEE08004060E6 /* LocalData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A0333B212BEE08004060E6 /* LocalData.storyboard */; };
+		39A0333F212BEF99004060E6 /* NodeDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A0333E212BEF99004060E6 /* NodeDAO.m */; };
+		39A03343212D44AF004060E6 /* NodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A03342212D44AF004060E6 /* NodeViewController.m */; };
+		39A03347212D469A004060E6 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A03346212D469A004060E6 /* Node.m */; };
 		39A0E0AA210065D70004BED5 /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39A0E0A9210065D60004BED5 /* team.plist */; };
 		39A0E0CC21007DBF0004BED5 /* Ghana.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A0E0AC21007DBF0004BED5 /* Ghana.png */; };
 		39A0E0CD21007DBF0004BED5 /* Argentina.png in Resources */ = {isa = PBXBuildFile; fileRef = 39A0E0AD21007DBF0004BED5 /* Argentina.png */; };
@@ -128,6 +132,13 @@
 		3954997C21071D9700DB6E64 /* team_dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team_dictionary.plist; sourceTree = "<group>"; };
 		3954998021071F1E00DB6E64 /* GroupTableviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupTableviewVC.h; sourceTree = "<group>"; };
 		3954998421071F5B00DB6E64 /* GroupTableviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupTableviewVC.m; sourceTree = "<group>"; };
+		39A0333B212BEE08004060E6 /* LocalData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocalData.storyboard; sourceTree = "<group>"; };
+		39A0333E212BEF99004060E6 /* NodeDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeDAO.m; sourceTree = "<group>"; };
+		39A03340212BEFA1004060E6 /* NodeDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeDAO.h; sourceTree = "<group>"; };
+		39A03342212D44AF004060E6 /* NodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeViewController.m; sourceTree = "<group>"; };
+		39A03344212D44B7004060E6 /* NodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeViewController.h; sourceTree = "<group>"; };
+		39A03345212D4691004060E6 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		39A03346212D469A004060E6 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		39A0E0A9210065D60004BED5 /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
 		39A0E0AC21007DBF0004BED5 /* Ghana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ghana.png; sourceTree = "<group>"; };
 		39A0E0AD21007DBF0004BED5 /* Argentina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Argentina.png; sourceTree = "<group>"; };
@@ -233,6 +244,7 @@
 		390AC9DA20F72FFC002B64C0 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				39A0333D212BEF82004060E6 /* LocalData */,
 				393056C8212274DE00D22351 /* plists */,
 				39F1C85C2117F18E006F4512 /* utils */,
 				39476A462112A5000035B049 /* navigationdemo */,
@@ -299,6 +311,19 @@
 			path = navigationdemo;
 			sourceTree = "<group>";
 		};
+		39A0333D212BEF82004060E6 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				39A0333E212BEF99004060E6 /* NodeDAO.m */,
+				39A03340212BEFA1004060E6 /* NodeDAO.h */,
+				39A03342212D44AF004060E6 /* NodeViewController.m */,
+				39A03344212D44B7004060E6 /* NodeViewController.h */,
+				39A03345212D4691004060E6 /* Node.h */,
+				39A03346212D469A004060E6 /* Node.m */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
 		39A0E0AB21007DBF0004BED5 /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +371,7 @@
 			children = (
 				39EE6C2320F87A320070D4AF /* TableviewDemoStoryboard.storyboard */,
 				39476A472112A5200035B049 /* NavigationDemo.storyboard */,
+				39A0333B212BEE08004060E6 /* LocalData.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -501,6 +527,7 @@
 				39F1C866211833AF006F4512 /* 保罗克利-肖像.png in Resources */,
 				39A0E0D421007DBF0004BED5 /* Cameroon.png in Resources */,
 				39A0E0D221007DBF0004BED5 /* USA.png in Resources */,
+				39A0333C212BEE08004060E6 /* LocalData.storyboard in Resources */,
 				39F1C867211833AF006F4512 /* 达芬奇-蒙娜丽莎.png in Resources */,
 				39476A482112A5200035B049 /* NavigationDemo.storyboard in Resources */,
 				39A0E0E121007DBF0004BED5 /* Serbia.png in Resources */,
@@ -568,10 +595,13 @@
 				39EE6C2720F881690070D4AF /* WidgetListViewController.m in Sources */,
 				39EE6C2B20F885870070D4AF /* LabelAndButtonVC.m in Sources */,
 				390AC9E020F72FFC002B64C0 /* ViewController.m in Sources */,
+				39A03347212D469A004060E6 /* Node.m in Sources */,
 				3954998521071F5B00DB6E64 /* GroupTableviewVC.m in Sources */,
 				3928AB3A20FF1A4C008A6F18 /* MyTableViewCell.m in Sources */,
 				39476A4B2112A9FD0035B049 /* RegisterViewController.m in Sources */,
 				39F1C86121181E8A006F4512 /* PageController.m in Sources */,
+				39A03343212D44AF004060E6 /* NodeViewController.m in Sources */,
+				39A0333F212BEF99004060E6 /* NodeDAO.m in Sources */,
 				390AC9EB20F72FFD002B64C0 /* main.m in Sources */,
 				393056D0212411BB00D22351 /* CityInfoVC.m in Sources */,
 				390AC9DD20F72FFC002B64C0 /* AppDelegate.m in Sources */,

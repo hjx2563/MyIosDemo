@@ -59,6 +59,14 @@
                                     <action selector="openNavigation:" destination="1kx-fC-XC5" eventType="touchUpInside" id="pvJ-rU-rn3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-Lc-EME">
+                                <rect key="frame" x="149" y="187" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="数据持久化"/>
+                                <connections>
+                                    <action selector="showLocalData:" destination="1kx-fC-XC5" eventType="touchUpInside" id="5Au-Ld-B0u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v36-py-Uvk"/>

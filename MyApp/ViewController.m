@@ -46,5 +46,12 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)showLocalData:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LocalData" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"NoteDAO"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end

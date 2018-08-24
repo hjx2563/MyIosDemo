@@ -12,6 +12,7 @@
 
 - (IBAction)openWidgetList:(id)sender;
 - (IBAction)openNavigation:(id)sender;
+- (IBAction)showLocalData:(id)sender;
 
 @end
 
